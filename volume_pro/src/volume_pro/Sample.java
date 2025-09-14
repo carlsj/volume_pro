@@ -8,6 +8,8 @@ public class Sample {
 		private String password;
 		private String userName;
 		
+		private String age;
+		
 		public String getUserId() {
 			return userId;
 		}
@@ -26,6 +28,22 @@ public class Sample {
 		public void setUserName(String userName) {
 			this.userName = userName;
 		}
+		
+		public String getAge() {
+			return age;
+		}
+		public void setAge(String age) {
+			this.age = age;
+		}
+		
+		
+		@Override
+		public String toString() {
+			return "UserInfo [userId=" + userId + ", password=" + password + ", userName=" + userName + ", age=" + age
+					+ "]";
+		}
+		
+		
 		
 		
 	}
